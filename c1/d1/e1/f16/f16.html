@@ -1,1 +1,109 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Сумма чисел</title>
+<meta name="generator" content="WYSIWYG Web Builder 11 - http://www.wysiwygwebbuilder.com">
+<link href="16.css" rel="stylesheet">
+<link href="f16.css" rel="stylesheet">
+<script language="JavaScript">
+var s=0;
+var i=0;
+var a=0;
+var b=0;
+var d1=0;
+var d2=0;
+var d3=0;
+var f=0;
+var sDate = new Date();
+var eDate = new Date();
+function cmds1(){
+f=0;
+s=0;
+i=10;
+d1=parseInt(Math.random()*i);
+d2=parseInt(Math.random()*i);
+d3=d1+d2;
+document.frm1.text1.value=d1;
+document.frm1.text2.value=d2;
+document.frm1.text3.value="";
+document.frm1.cmd1.value=s;
+	sDate = new Date();
+	b = sDate.getTime();
+}
+function text31(){
+eDate=new Date();
+a=eDate.getTime();
+var k=b-a;
+if (k<0) {k=-k;}
+if (k<7000) {
+    if (d3==parseInt(document.frm1.text3.value)) {
+		s=s+1;
+		document.frm1.cmd1.value=s;
+		document.frm1.text3.value="";
+		f=0;}
+    else
+		{f=1;}
+}
+else
+	{alert(s);
+	document.frm2.textd2.value=s;
+	s=0;
+	document.frm1.text3.value="";}
+if (f==0) {
+	i=i+10;
+	d1=parseInt(Math.random()*i);
+	d2=parseInt(Math.random()*i);
+	d3=d1+d2;
+	document.frm1.text1.value=d1;
+	document.frm1.text2.value=d2;
+	document.frm1.text3.value="";
+	sDate = new Date();
+	b = sDate.getTime();
+}
+}
+</script>
+</head>
+<body>
+<div id="container">
+<hr id="Line1" style="position:absolute;left:10px;top:10px;width:960px;height:805px;z-index:6;">
+<div id="wb_TextArt1" style="position:absolute;left:257px;top:47px;width:456px;height:67px;z-index:7;">
+<img src="images/img0001.png" id="TextArt1" alt="&#1057;&#1091;&#1084;&#1084;&#1072; &#1095;&#1080;&#1089;&#1077;&#1083;" title="&#1057;&#1091;&#1084;&#1084;&#1072; &#1095;&#1080;&#1089;&#1077;&#1083;" style="width:456px;height:67px;"></div>
+<div id="wb_Line2" style="position:absolute;left:61px;top:125px;width:841px;height:3px;z-index:8;">
+<img src="images/img0002.png" id="Line2" alt=""></div>
+<div id="wb_Text1" style="position:absolute;left:64px;top:150px;width:843px;height:45px;text-align:center;z-index:9;">
+<span style="color:#FFF5EE;font-family:'Comic Sans MS';font-size:32px;">Результат за семь секунд</span></div>
+<div id="wb_Text2" style="position:absolute;left:67px;top:249px;width:839px;height:223px;z-index:10;text-align:left;">
+<span style="color:#FFF5EE;font-family:'Comic Sans MS';font-size:21px;">Правила игры: за 7 секунд нужно дать правильный ответ. Если решено правильно, то ответ стирается автоматически. Если решение неверное, то ответ остается. Значит, нужно решить заново. За каждый правильный ответ добавляется одно очко. Если не уложишься во времени, игра заканчивается и высвечивается число набранных ответов.<br></span><span style="color:#FFFF00;font-family:Arial;font-size:21px;">Инструкция. Начало игры -</span><span style="color:#FFFF00;font-family:Calibri;font-size:21px;"> нажать кнопку «старт», в первых текстовых полях высвечиваются числа, которые нужно сложить и результат записать в третьем текстовом поле. </span></div>
+<div id="wb_Line3" style="position:absolute;left:61px;top:210px;width:841px;height:3px;z-index:11;">
+<img src="images/img0003.png" id="Line3" alt=""></div>
+<div id="wb_CssMenu1" style="position:absolute;left:67px;top:66px;width:164px;height:40px;text-align:center;z-index:12;">
+<ul>
+<li class="firstmain"><a href="http://superintellect.github.io" target="_self">superintellect</a>
+</li>
+</ul>
+</div>
+<div id="wb_CssMenu2" style="position:absolute;left:744px;top:66px;width:164px;height:40px;text-align:center;z-index:13;">
+<ul>
+<li class="firstmain"><a href="http://superintellect.github.io" target="_self">JavaScript</a>
+</li>
+</ul>
+</div>
 
+<div id="wb_Form1" style="position:absolute;left:65px;top:493px;width:841px;height:243px;z-index:14;">
+<form name=frm1>
+<input onclick=cmds1() type="button" id="Button2" name="cmds" value="Старт" style="position:absolute;left:109px;top:27px;width:187px;height:50px;z-index:16;">
+<input type="button" id="Button1" name="cmd1" value="Очко: 0" style="position:absolute;left:597px;top:27px;width:187px;height:50px;z-index:4;">
+<input type="text" id="Editbox1" style="position:absolute;left:93px;top:122px;width:127px;height:51px;line-height:51px;z-index:3;" name="text1" value="">
+<input type="text" id="Editbox5" style="position:absolute;left:253px;top:122px;width:51px;height:51px;line-height:51px;z-index:5;" name="Editbox1" value="+" readonly>
+<input type="text" id="Editbox3" style="position:absolute;left:343px;top:122px;width:127px;height:51px;line-height:51px;z-index:1;" name="text2" value="">
+<input type="text" id="Editbox2" style="position:absolute;left:508px;top:122px;width:51px;height:51px;line-height:51px;z-index:0;" name="Editbox2" value="=" readonly>
+<input onKeyUp=text31() type="text" id="Editbox4" style="position:absolute;left:597px;top:122px;width:127px;height:51px;line-height:51px;z-index:2;" name="text3" value="">
+</form>
+</div>
+
+<div id="wb_Line4" style="position:absolute;left:62px;top:769px;width:841px;height:3px;z-index:15;">
+<img src="images/img0004.png" id="Line4" alt=""></div>
+
+</div>
+</body>
+</html>
