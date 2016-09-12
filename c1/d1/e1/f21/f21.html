@@ -1,1 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Калькулятор</title>
+<meta name="generator" content="WYSIWYG Web Builder 11 - http://www.wysiwygwebbuilder.com">
+<link href="21.css" rel="stylesheet">
+<link href="f21.css" rel="stylesheet">
+	<script language="JavaScript">
+	var m=0;
+	var f=0;
+	var x=0;
+	var y=0;
+	function cmcm(){
+		m=0;
+		document.frm1.txt5.value=m
+	}
+	function cmmm(){
+		m=m-parseInt(document.frm1.txt1.value);
+		document.frm1.txt5.value=m
+	}
+	function cmmp(){
+		m=m+x;
+		document.frm1.txt5.value=m
+	}
+	function cmmr(){
+		x=m;
+		document.frm1.txt1.value=x;
+	}
+	function cmcy(){
+		y=0;
+		document.frm1.txt3.value=y
+	}
+	function cmcx(){
+		x=0;
+		document.frm1.txt1.value=x
+	}
+	function cm7(){
+		x=x*10+7;
+		document.frm1.txt1.value=x
+	}	
+	function cm8(){
+		x=x*10+8;
+		document.frm1.txt1.value=x
+	}	
+	function cm9(){
+		x=x*10+9;
+		document.frm1.txt1.value=x
+	}	
+	function cmd(){
+		f=4;y=x;
+		document.frm1.txt3.value=y;
+		x=0;
+		document.frm1.txt1.value=x
+	}	
+	function cm4(){
+		x=x*10+4;
+		document.frm1.txt1.value=x
+	}
+	function cm5(){
+		x=x*10+5;
+		document.frm1.txt1.value=x
+	}
+	function cm6(){
+		x=x*10+6;
+		document.frm1.txt1.value=x
+	}
+	function cmt(){
+		f=3;y=x;
+		document.frm1.txt3.value=y;
+		x=0;
+		document.frm1.txt1.value=x
+	}
+	function cm1(){
+		x=x*10+1;
+		document.frm1.txt1.value=x
+	}
+	function cm2(){
+		x=x*10+2;
+		document.frm1.txt1.value=x
+	}
+	function cm3(){
+		x=x*10+3;
+		document.frm1.txt1.value=x
+	}
+	function cmm(){
+		f=2;y=x;
+		document.frm1.txt3.value=y;
+		x=0;
+		document.frm1.txt1.value=x
+	}	
+	function cm0(){
+		x=x*10+0;
+		document.frm1.txt1.value=x
+	}
+	function cmpm(){
+		x=-x;
+		document.frm1.txt1.value=x
+	}
+	function cmp(){
+		f=1;y=x;
+		document.frm1.txt3.value=y;
+		x=0;
+		document.frm1.txt1.value=x
+	}
+	function cmr(){
+	switch (f) {
+	case 1:
+		x=y+x;document.frm1.txt1.value=x;
+		y=0;document.frm1.txt3.value=y;
+		f=0
+    break;
+	case 2:
+		x=y-x;document.frm1.txt1.value=x;
+		y=0;document.frm1.txt3.value=y;
+		f=0
+    break;
+	case 3:
+		x=y*x;document.frm1.txt1.value=x;
+		y=0;document.frm1.txt3.value=y;
+		f=0
+    break;
+	case 4:
+		x=y/x;document.frm1.txt1.value=x;
+		y=0;document.frm1.txt3.value=y;
+		f=0
+	break;
+}
+}	
+	</script>
+</head>
+<body>
+<div id="container">
+<div id="wb_Shape1" style="position:absolute;left:3px;top:62px;width:967px;height:820px;z-index:23;">
+<img src="images/img0001.png" id="Shape1" alt="" style="width:967px;height:820px;"></div>
+<div id="wb_Line1" style="position:absolute;left:81px;top:88px;width:800px;height:3px;z-index:24;">
+<img src="images/img0002.png" id="Line1" alt=""></div>
+<div id="wb_Line2" style="position:absolute;left:81px;top:186px;width:800px;height:3px;z-index:25;">
+<img src="images/img0003.png" id="Line2" alt=""></div>
+<div id="wb_TextArt1" style="position:absolute;left:182px;top:110px;width:607px;height:64px;z-index:26;">
+<img src="images/img0004.png" id="TextArt1" alt="&#1050;&#1072;&#1083;&#1100;&#1082;&#1091;&#1083;&#1103;&#1090;&#1086;&#1088;" title="&#1050;&#1072;&#1083;&#1100;&#1082;&#1091;&#1083;&#1103;&#1090;&#1086;&#1088;" style="width:607px;height:64px;"></div>
+<div id="wb_Line3" style="position:absolute;left:79px;top:839px;width:800px;height:3px;z-index:27;">
+<img src="images/img0005.png" id="Line3" alt=""></div>
+<div id="wb_Form1" style="position:absolute;left:85px;top:233px;width:798px;height:574px;z-index:28;">
 
+<form name="frm1">
+<input type="text" name="txt4" value="M" size=2 for="" id="Label3" style="position:absolute;left:116px;top:37px;width:54px;height:40px;line-height:40px;z-index:29;" readonly >
+<input type="text" name="txt5" value="0" for="" id="Label4" style="position:absolute;left:215px;top:37px;width:360px;height:40px;line-height:40px;z-index:30;" readonly >
+<input onclick=cmcm() type="button" name="cmdcm" value="С" id="Button5" style="position:absolute;left:619px;top:37px;width:62px;height:48px;z-index:31;">
+<input onclick=cmmm() type=button name=cmdmm value="М -" id="Button4" style="position:absolute;left:116px;top:101px;width:140px;height:47px;z-index:6;">
+<input onclick=cmmp() type=button name=cmdmp value="М +" id="Button1" style="position:absolute;left:329px;top:101px;width:140px;height:47px;z-index:2;">
+<input onclick=cmmr() type=button name=cmdmr value="M R" id="Button3" style="position:absolute;left:539px;top:101px;width:140px;height:47px;z-index:3;">
+<input type="text" name="txt2" value="y" for="" id="Label5" style="position:absolute;left:116px;top:176px;width:54px;height:40px;line-height:40px;z-index:32;"  readonly>
+<input type="text" name="txt3" value="0" for="" id="Label6" style="position:absolute;left:215px;top:176px;width:357px;height:40px;line-height:40px;z-index:7;"  readonly>
+<input onclick=cmcy() type="button" name="cmdcy" value="С" id="Button6" style="position:absolute;left:619px;top:176px;width:62px;height:48px;z-index:33;">
+<input type="text" name="txt0" value="x" for="" id="Label7" style="position:absolute;left:116px;top:242px;width:54px;height:40px;line-height:40px;z-index:34;"  readonly>
+<input type="text" name="txt1" value="0" for="" id="Label1" style="position:absolute;left:215px;top:242px;width:357px;height:40px;line-height:40px;z-index:0;"  readonly>
+<input onclick=cmcx() type="button" name="cmdcx" value="С" id="Button7" style="position:absolute;left:619px;top:242px;width:62px;height:48px;z-index:35;">
+<input onclick=cm7() type=button name=cmd7 value="7" id="Button8" style="position:absolute;left:116px;top:306px;width:99px;height:48px;z-index:36;">
+<input onclick=cm8() type=button name=cmd8 value="8" id="Button2" style="position:absolute;left:265px;top:306px;width:99px;height:48px;z-index:4;">
+<input onclick=cm9() type=button name=cmd9 value="9" id="Button9" style="position:absolute;left:422px;top:306px;width:99px;height:48px;z-index:9;">
+<input onclick=cmd() type=button name=cmdd value=":" id="Button10" style="position:absolute;left:583px;top:306px;width:99px;height:48px;z-index:10;">
+<input onclick=cm4() type=button name=cmd4 value="4" id="Button11" style="position:absolute;left:116px;top:369px;width:99px;height:48px;z-index:11;">
+<input onclick=cm5() type=button name=cmd5 value="5" id="Button12" style="position:absolute;left:265px;top:369px;width:99px;height:48px;z-index:12;">
+<input onclick=cm6() type=button name=cmd6 value="6" id="Button13" style="position:absolute;left:422px;top:369px;width:99px;height:48px;z-index:13;">
+<input onclick=cmt() type=button name=cmdt value="х" id="Button14" style="position:absolute;left:583px;top:369px;width:99px;height:48px;z-index:14;">
+<input onclick=cm1() type=button name=cmd1 value="1" id="Button15" style="position:absolute;left:116px;top:434px;width:99px;height:48px;z-index:15;">
+<input onclick=cm2() type=button name=cmd2 value="2" id="Button16" style="position:absolute;left:265px;top:434px;width:99px;height:48px;z-index:16;">
+<input onclick=cm3() type=button name=cmd3 value="3" id="Button17" style="position:absolute;left:422px;top:434px;width:99px;height:48px;z-index:17;">
+<input onclick=cmm() type=button name=cmdm value="-" id="Button18" style="position:absolute;left:583px;top:434px;width:99px;height:48px;z-index:18;">
+<input onclick=cm0() type=button name=cmd0 value="0" id="Button19" style="position:absolute;left:116px;top:500px;width:99px;height:48px;z-index:19;">
+<input onclick=cmpm() type=button name=cmdz value="- / +" id="Button20" style="position:absolute;left:265px;top:500px;width:99px;height:48px;z-index:20;">
+<input onclick=cmr() type=button name=cmdr value="=" id="Button21" style="position:absolute;left:422px;top:500px;width:99px;height:48px;z-index:21;">
+<input onclick=cmp() type=button name=cmdp value="+" id="Button22" style="position:absolute;left:583px;top:500px;width:99px;height:48px;z-index:22;">
+<div id="wb_Line4" style="position:absolute;left:744px;top:34px;width:4px;height:510px;z-index:1;">
+<img src="images/img0006.png" id="Line4" alt=""></div>
+<div id="wb_Line6" style="position:absolute;left:112px;top:156px;width:563px;height:4px;z-index:5;">
+<img src="images/img0008.png" id="Line6" alt=""></div>
+<div id="wb_Line5" style="position:absolute;left:49px;top:33px;width:4px;height:511px;z-index:8;">
+<img src="images/img0007.png" id="Line5" alt=""></div>	
+</form>
+</div>
+</div>
+</body>
+</html>
