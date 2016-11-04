@@ -1,0 +1,139 @@
+div#container
+{
+   width: 970px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #3CB371;
+   background-image: url(images/g1_bkgrnd.png);
+   background-repeat: repeat-x;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+#Flash1
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Line1
+{
+   border-width: 0;
+   height: 9px;
+   width: 819px;
+}
+#TextArt1
+{
+   border-width: 0;
+}
+#Line2
+{
+   border-width: 0;
+   height: 9px;
+   width: 819px;
+}
+#Line3
+{
+   border-width: 0;
+   height: 9px;
+   width: 819px;
+}
+#Line4
+{
+   border-width: 0;
+   height: 9px;
+   width: 819px;
+}
+#jQueryButton1
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 19px;
+   font-style: normal;
+}
+#jQueryButton1 .ui-button
+{
+   position: absolute;
+}
+#jQueryButton1 .ui-button-text-icon .ui-button-icon-primary,
+#jQueryButton1 .ui-button-text-icons .ui-button-icon-primary,
+#jQueryButton1 .ui-button-icons-only .ui-button-icon-primary
+{
+   left: auto;
+   right: 10px;
+}
+#jQueryButton1 .ui-button-text-icons .ui-button-icon-secondary,
+#jQueryButton1 .ui-button-icons-only .ui-button-icon-secondary
+{
+   right: auto;
+   left: 10px;
+}
+#jQueryButton1.ui-corner-all
+{
+   -webkit-border-bottom-left-radius: 4px;
+   -moz-border-bottom-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+   -webkit-border-top-left-radius: 4px;
+   -moz-border-top-left-radius: 4px;
+   border-top-left-radius: 4px;
+}
+#jQueryButton1.ui-corner-all
+{
+   -webkit-border-bottom-right-radius: 4px;
+   -moz-border-bottom-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+   -webkit-border-top-right-radius: 4px;
+   -moz-border-top-right-radius: 4px;
+   border-top-right-radius: 4px;
+}
+#jQueryButton2
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 19px;
+   font-style: normal;
+}
+#jQueryButton2 .ui-button
+{
+   position: absolute;
+}
+#jQueryButton2 .ui-button-text-icon .ui-button-icon-primary,
+#jQueryButton2 .ui-button-text-icons .ui-button-icon-primary,
+#jQueryButton2 .ui-button-icons-only .ui-button-icon-primary
+{
+   left: auto;
+   right: 10px;
+}
+#jQueryButton2 .ui-button-text-icons .ui-button-icon-secondary,
+#jQueryButton2 .ui-button-icons-only .ui-button-icon-secondary
+{
+   right: auto;
+   left: 10px;
+}
+#jQueryButton2.ui-corner-all
+{
+   -webkit-border-bottom-left-radius: 4px;
+   -moz-border-bottom-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+   -webkit-border-top-left-radius: 4px;
+   -moz-border-top-left-radius: 4px;
+   border-top-left-radius: 4px;
+}
+#jQueryButton2.ui-corner-all
+{
+   -webkit-border-bottom-right-radius: 4px;
+   -moz-border-bottom-right-radius: 4px;
+   border-bottom-right-radius: 4px;
+   -webkit-border-top-right-radius: 4px;
+   -moz-border-top-right-radius: 4px;
+   border-top-right-radius: 4px;
+}
